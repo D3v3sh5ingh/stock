@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jquery.terminal@2.x.x/css/jquery.terminal.min.css"
+    />
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="source">
+        <a target="blank" href="http://deveshsingh.ml"
+          ><span>from </span><a href="http://deveshsingh.ml">Devesh Singh</a></a
+        >
+      </div>
+      <div class="phone" style="flex-direction: column">
+        <div id="term"></div>
+        <h1 class="display-6">Stock Data to be dumped here</h1>
+
+        <p class="lead" style="overflow: scroll; max-height: 60%" id="apnamaal">
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Duis mollis, est non commodo luctus.
+        </p>
+
+        <div class="phone-footer">
+          <div class="nav">
+            <div class="nav-item">
+              <label for="Home"></label>
+              <input
+                type="radio"
+                name="nav"
+                value="Home"
+                id="Home"
+                checked="checked"
+              /><span>Home</span>
+            </div>
+            <div class="nav-item">
+              <label for="Likes"></label>
+              <input type="radio" name="nav" value="Likes" id="Likes" /><span
+                >Likes</span
+              >
+            </div>
+            <div class="nav-item">
+              <label for="Search"></label>
+              <input type="radio" name="nav" value="Search" id="Search" /><span
+                >Search</span
+              >
+            </div>
+            <div class="nav-item">
+              <label for="Profile"></label>
+              <input
+                type="radio"
+                name="nav"
+                value="Profile"
+                id="Profile"
+              /><span>Profile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="node_modules/alphavantage/dist/bundle.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
