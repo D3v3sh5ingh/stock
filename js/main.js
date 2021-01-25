@@ -1,21 +1,30 @@
 const alpha = require('alphavantage')({ key: 'ZT190HZDN99BS851' });
-
-alpha.data.daily(`IDEA.BO`).then(data=>{
-    var s=document.getElementById("apnamaal");
-    s.innerHTML =JSON.stringify(data);
-
-});
+import swal from 'sweetalert';
 
 
-// alpha.data.intraday(`msft`).then(data => {
-//     var s=document.getElementById("apnamaal");
-//     s.innerHTML =JSON.stringify(data);
-//   });
+
+
+  
   
 jQuery(function($, undefined) {
     $('#term').terminal(function(command) {
 
-        if (command !== '') {
+        
+            if (command == 'daily stock') {
+                this.echo("Welcome to daily stock values");
+                swal("Enter stock code (If BSE add .BO in end for ex : IDEA.BO):", {
+                    content: "input",
+                  })
+                  .then((value) => {
+                    alpha.data.daily(value).then(data=>{
+                        var s=document.getElementById("apnamaal");
+                        s.innerHTML =JSON.stringify(data);
+                    
+                    });
+                  });
+                
+            }
+            else if (command !== '') {
             try {
                 var result = window.eval(command);
                 if (result !== undefined) {
@@ -28,7 +37,7 @@ jQuery(function($, undefined) {
            this.echo('');
         }
     }, {
-        greetings: 'JavaScript Interpreter',
+        greetings: 'Stoc Command Line',
         name: 'js_demo',
         height: 200,
         prompt: 'js> '

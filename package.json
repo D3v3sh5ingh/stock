@@ -21,6 +21,7 @@
   "dependencies": {
     "alphavantage": "^2.2.0",
     "bootstrap": "^5.0.0-beta1",
-    "stocks.js": "0.0.19"
+    "stocks.js": "0.0.19",
+    "sweetalert": "^2.1.2"
   }
 }
