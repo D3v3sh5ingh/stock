@@ -1,4 +1,5 @@
 const alpha = require('alphavantage')({ key: 'ZT190HZDN99BS851' });
+//Sweetaleart box plugin for popups and alerts
 import swal from 'sweetalert';
 function createMydata(data){
     return [
